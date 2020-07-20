@@ -1,0 +1,111 @@
+body {
+    color: rgb(3, 31, 7);
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+img {
+    grid-column: 1;
+    width: 10%;
+    height: auto;
+    padding: 3%; 
+    vertical-align: bottom;
+   
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(82, 82, 172);
+    padding: 0%, 3%, 3%, 3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 400%;
+    font-family: fantasy;
+    display: inline;
+    box-sizing: border-box;
+    margin: 5%;
+    overflow: invisible;
+}
+
+menu {
+    grid-column-start: 1;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+menu h4 {
+    line-height: normal;
+}
+
+.navigation {
+    font-size: 20px;
+    background-color: grey;
+    border: black;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.grid-item a {
+    float: left;
+    text-decoration: none;
+
+}
+
+.grid-item a:hover {
+    color: darkblue;
+}
+
+main {
+    background-color: rgb(140, 140, 196);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.list {
+    display: block;
+}
+
+footer {
+    grid-row-start: 3;
+    box-sizing: border-box;
+    width: 75%;
+    text-align: center;
+    box-align: center;
+    visibility: hidden;
+}
+
+.button {
+    background-color: rgb(63, 62, 62);
+    border: none;
+    color: white;
+    padding: 15%;
+    border-radius: 2px;
+    text-align: center; 
+    height: 2%;
+    width: 40%;
+}
+
+.button:hover {
+    background-color: rgb(16, 16, 53);
+    color: white;
+}
